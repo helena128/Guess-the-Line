@@ -1,4 +1,4 @@
-#Soft string comparison module
+# Soft string comparison module
 
 def SoftStringComparison(s1,s2):   
     return WhiteSpaceTrim(s1.lower(), s2.lower())
