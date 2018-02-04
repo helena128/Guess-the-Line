@@ -14,7 +14,8 @@ score=0
 songsused=[]
 attemptcount=[]
 for song in range(len(songs)):
-    print("Here are lyrics from the song: ", songs[song][0]) #ввыводим первые 2 значения строки
+    # output the 1st two lines
+    print("Here are lyrics from the song: ", songs[song][0])
     songsused.append(songs[song][1])
     print("The song was written/performed by: ", songs[song][2])
     for attempt in range(3):
@@ -31,7 +32,6 @@ for song in range(len(songs)):
 
 print( "You got "+str(score)+" correct out of " + str(len(songs)) )
 f.close()
-#print(list(zip(songsused, attemptcount)))
 print(str(songsused))
 print(attemptcount)
 r=list(map( lambda x, y: print(x,"=", y) , songsused, attemptcount ))
